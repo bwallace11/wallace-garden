@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brittany's Digital Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#desktop-main">Skip to desktop content</a>
+
+    <div class="wallpaper" aria-hidden="true">
+      <div class="stars"></div>
+      <div class="nebula"></div>
+      <div class="grain"></div>
+      <div class="moth moth-1">✦</div>
+      <div class="moth moth-2">🦇</div>
+      <div class="mothman" title="The Mothman is watching...">
+        <img src="assets/images/mothman.png" alt="" class="mothman-img" />
+      </div>
+    </div>
+
+    <main id="desktop-main" class="desktop" aria-label="Brittany's desktop environment">
+      <section class="desktop-icons" aria-label="Desktop shortcuts">
+        <button class="desktop-icon" data-app="notes" aria-label="Open Design Notes">
+          <span class="icon-art" aria-hidden="true">📓</span>
+          <span class="icon-label">Design Notes</span>
+        </button>
+        <button class="desktop-icon" data-app="experiments" aria-label="Open Design Experiments">
+          <span class="icon-art" aria-hidden="true">🧪</span>
+          <span class="icon-label">Design Experiments</span>
+        </button>
+        <button class="desktop-icon" data-app="projects" aria-label="Open Project Breakdowns">
+          <span class="icon-art" aria-hidden="true">📁</span>
+          <span class="icon-label">Project Breakdowns</span>
+        </button>
+        <button class="desktop-icon" data-app="learning" aria-label="Open Learning Logs">
+          <span class="icon-art" aria-hidden="true">📚</span>
+          <span class="icon-label">Learning Logs</span>
+        </button>
+        <button class="desktop-icon" data-app="inspiration" aria-label="Open Inspiration Library">
+          <span class="icon-art" aria-hidden="true">🌌</span>
+          <span class="icon-label">Inspiration Library</span>
+        </button>
+        <button class="desktop-icon" data-app="now" aria-label="Open Now page">
+          <span class="icon-art" aria-hidden="true">☕</span>
+          <span class="icon-label">Now</span>
+        </button>
+        <button class="desktop-icon" data-app="snippets" aria-label="Open Code Snippets">
+          <span class="icon-art" aria-hidden="true">&lt;/&gt;</span>
+          <span class="icon-label">Code Snippets</span>
+        </button>
+      </section>
+
+      <section class="window-layer" id="window-layer" aria-live="polite"></section>
+
+      <footer class="taskbar" aria-label="Desktop dock">
+        <div class="taskbar-title">
+          <span class="dot"></span>
+          Brittany's Digital Garden
+        </div>
+        <div id="taskbar-windows" class="taskbar-windows" aria-label="Open windows"></div>
+        <div class="taskbar-right">
+          <span class="taskbar-coffee" aria-hidden="true">☕</span>
+          <time id="clock" aria-label="Current time"></time>
+        </div>
+      </footer>
+    </main>
+
+    <main class="mobile-garden" aria-label="Mobile view of Brittany's Digital Garden">
+      <header class="mobile-header">
+        <h1>Brittany's Digital Garden</h1>
+        <p>Late-night notes, projects, and experiments.</p>
+      </header>
+      <section class="mobile-cards" id="mobile-cards"></section>
+    </main>
+
+    <template id="tpl-notes" data-title="Design Notes">
+      <article class="content-block">
+        <h2>Design Notes</h2>
+        <ul class="entry-list">
+          <li><strong>Typography:</strong> Pair serif headlines with clean sans body copy for a haunted editorial vibe.</li>
+          <li><strong>Palette test:</strong> Lavender highlights work best when background stays near-black with soft blue-purple haze.</li>
+          <li><strong>UX thought:</strong> Motion should feel like breathing, not bouncing; fade + slight scale keeps calm energy.</li>
+          <li><strong>Layout study:</strong> Asymmetrical cards can still feel stable when spacing and type scale stay consistent.</li>
+        </ul>
+      </article>
+    </template>
+
+    <template id="tpl-projects" data-title="Project Breakdowns">
+      <article class="content-block">
+        <h2>Project Breakdowns</h2>
+        <section>
+          <h3>Java Noir Scrollytelling Project</h3>
+          <p>A cinematic narrative page blending coffee culture history with atmospheric transitions and layered storytelling.</p>
+          <p><strong>Tools:</strong> HTML, CSS, JavaScript, GSAP, ScrollTrigger</p>
+          <p><strong>Design decisions:</strong> Dark framing, dramatic section reveals, and typewriter-like moments for pacing.</p>
+        </section>
+        <section>
+          <h3>History of Web Design</h3>
+          <p>Interactive timeline documenting major shifts in web aesthetics from table layouts to immersive interfaces.</p>
+          <p><strong>Tools:</strong> Semantic HTML, CSS grid/flex, custom timeline logic</p>
+          <p><strong>Design decisions:</strong> Era-based colors and restrained animation to keep educational clarity.</p>
+        </section>
+        <section>
+          <h3>Yo-Pida Project</h3>
+          <p>A character-forward concept site focused on playful motion, bright accents, and storytelling through UI.</p>
+          <p><strong>Tools:</strong> Figma, Illustrator, CSS animations</p>
+          <p><strong>Design decisions:</strong> Bold iconography and motion rhythm to express personality without overwhelming users.</p>
+        </section>
+      </article>
+    </template>
+
+    <template id="tpl-experiments" data-title="Design Experiments">
+      <article class="content-block">
+        <h2>Design Experiments</h2>
+        <ul class="entry-list">
+          <li><strong>GSAP Scroll Echo:</strong> Triggered headers with delayed glow trails.</li>
+          <li><strong>Micro Animation Test:</strong> Button press states with subtle depth + neon edge shift.</li>
+          <li><strong>Layout Prototype:</strong> Split hero with floating note cards and magnetic cursor area.</li>
+          <li><strong>UI Component Lab:</strong> Window tabs, glass panels, and moody status indicators.</li>
+        </ul>
+      </article>
+    </template>
+
+    <template id="tpl-learning" data-title="Learning Logs">
+      <article class="content-block">
+        <h2>Learning Logs</h2>
+        <section>
+          <h3>Week 11 — Motion as Story</h3>
+          <p><strong>Learned:</strong> Animation works best when tied to hierarchy and narrative beats.</p>
+          <p><strong>Difficult:</strong> Balancing performance with layered effects on older devices.</p>
+          <p><strong>Experimented:</strong> Staggered text reveal timings and viewport-aware trigger thresholds.</p>
+        </section>
+        <section>
+          <h3>Week 12 — Systems Thinking</h3>
+          <p><strong>Learned:</strong> Reusable design tokens keep projects coherent even when styles vary.</p>
+          <p><strong>Difficult:</strong> Naming patterns that still make sense six weeks later.</p>
+          <p><strong>Experimented:</strong> Purple tonal scales for contrast-safe UI in dark mode.</p>
+        </section>
+      </article>
+    </template>
+
+    <template id="tpl-inspiration" data-title="Inspiration Library">
+      <article class="content-block">
+        <h2>Inspiration Library</h2>
+        <div class="inspiration-grid">
+          <section>
+            <h3>Websites</h3>
+            <p>Experimental portfolios, immersive story sites, and retro web tributes.</p>
+          </section>
+          <section>
+            <h3>Music Aesthetics</h3>
+            <p>Synthwave, ambient night drive mixes, and dark lo-fi loops.</p>
+          </section>
+          <section>
+            <h3>Game UI</h3>
+            <p>Diegetic HUDs, inventory systems, and moody RPG menu transitions.</p>
+          </section>
+          <section>
+            <h3>Dark/Gothic Design</h3>
+            <p>Victorian-inspired type, shadow layering, and atmospheric textures.</p>
+          </section>
+          <section>
+            <h3>Internet Culture</h3>
+            <p>Old forums, fan pages, and the handmade weirdness of early web communities.</p>
+          </section>
+        </div>
+      </article>
+    </template>
+
+    <template id="tpl-snippets" data-title="Code Snippets">
+      <article class="content-block">
+        <h2>Code Snippets</h2>
+        <section>
+          <h3>Dark Mode Toggle</h3>
+          <pre><code>document.body.classList.toggle('dark-mode');</code></pre>
+        </section>
+        <section>
+          <h3>CSS Grid Starter</h3>
+          <pre><code>.layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}</code></pre>
+        </section>
+        <section>
+          <h3>GSAP Starter</h3>
+          <pre><code>gsap.from('.card', {
+  y: 24,
+  opacity: 0,
+  duration: 0.8,
+  stagger: 0.1
+});</code></pre>
+        </section>
+      </article>
+    </template>
+
+    <template id="tpl-now" data-title="Now">
+      <article class="content-block">
+        <h2>Now</h2>
+        <ul class="entry-list">
+          <li>Working through my graphic design degree while shipping web projects weekly.</li>
+          <li>Building interactive portfolio experiences with stronger visual storytelling.</li>
+          <li>Learning GSAP deeply, especially ScrollTrigger timing and composition.</li>
+          <li>Fueling late-night coding sessions with too much coffee and ambient playlists.</li>
+          <li>Unwinding with games and collecting visual inspiration from moody UI systems.</li>
+        </ul>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
