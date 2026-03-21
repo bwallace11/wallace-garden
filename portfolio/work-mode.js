@@ -363,13 +363,13 @@ function setActiveNav(section) {
 function resolveProjectImage(path) {
   if (!path) return '';
   const normalized = path.startsWith('/') ? path : `/${path}`;
-  return encodeURI(`assets/portfolio${normalized}`);
+  return encodeURI(`../assets/portfolio${normalized}`);
 }
 
 function resolveProjectUrl(path) {
   if (!path) return '';
   if (/^https?:\/\//i.test(path)) return path;
-  return encodeURI(`assets/portfolio${path.startsWith('/') ? path : `/${path}`}`);
+  return encodeURI(`../assets/portfolio${path.startsWith('/') ? path : `/${path}`}`);
 }
 
 function showPanel(panelName, navSection = null) {
