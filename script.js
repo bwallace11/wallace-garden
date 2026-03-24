@@ -12,13 +12,13 @@ const appContent = {
         title: "Site Overview",
         summary: "What this portfolio is, how it was built, and where it is deployed.",
         content:
-          '<article class="content-block"><h2>Site Overview</h2><p>This is Brittany Wallace&apos;s personal website and digital garden: a place to share portfolio work, design experiments, class projects, and process notes in one interactive space.</p><ul class="entry-list"><li><strong>Content:</strong> Portfolio pieces, inspiration, weekly learning, and current work.</li><li><strong>Design:</strong> A custom desktop-inspired interface with atmospheric styling.</li><li><strong>Code:</strong> Built with vanilla HTML, CSS, and JavaScript.</li><li><strong>Deployment:</strong> Published through GitHub Pages at bwallace11.github.io.</li></ul></article>',
+          '<article class="content-block"><h2>Site Overview</h2><p>This is Brittany Wallace&apos;s personal website and Late Night Studio: a place to share portfolio work, design experiments, class projects, and process notes in one interactive space.</p><ul class="entry-list"><li><strong>Content:</strong> Portfolio pieces, inspiration, weekly learning, and current work.</li><li><strong>Design:</strong> A custom desktop-inspired interface with atmospheric styling.</li><li><strong>Code:</strong> Built with vanilla HTML, CSS, and JavaScript.</li><li><strong>Deployment:</strong> Published through GitHub Pages at bwallace11.github.io.</li></ul></article>',
       },
       {
-        title: "Why a Digital Garden",
+        title: "Why a Late Night Studio",
         summary: "A more personal format than a standard portfolio grid.",
         content:
-          '<article class="content-block"><h2>Why a Digital Garden</h2><p>I wanted the portfolio itself to feel designed, not just the projects inside it. The desktop metaphor lets the site show personality while still organizing work into clear categories.</p><p>The goal is to make the site feel handmade, memorable, and unmistakably mine.</p></article>',
+          '<article class="content-block"><h2>Why a Late Night Studio</h2><p>I wanted the portfolio itself to feel designed, not just the projects inside it. The desktop metaphor lets the site show personality while still organizing work into clear categories.</p><p>The goal is to make the site feel handmade, memorable, and unmistakably mine.</p></article>',
       },
     ],
   },
